@@ -33,28 +33,28 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>sL3b/+XK+h20FO9kNwvzFZKkCiQ=23-01-2021 12:39:4623-01-2021 00:19:12</TimeStamp>
+        <TimeStamp>D3Yd8hMU9VVGh1VxexeHiFk/HNU=24-01-2021 18:03:1323-01-2021 00:19:12</TimeStamp>
         <ID>
           <String>ContinenteClassificationModels</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>t4GX8EXM69sJ7/dClaUFX37vtHU=23-01-2021 15:36:4923-01-2021 13:09:28</TimeStamp>
+        <TimeStamp>a/vpqzU5BKlA4LhPClUnFDf49Co=24-01-2021 20:43:4023-01-2021 13:09:28</TimeStamp>
         <ID>
           <String>QuadranteClassificationModel</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>SKmNoxOEh00teNdAePf6uoLU4mw=23-01-2021 16:04:0023-01-2021 15:43:54</TimeStamp>
+        <TimeStamp>sneKcnUHYCXJ9+qr0q1LSXwC5Ws=24-01-2021 20:56:4223-01-2021 15:43:54</TimeStamp>
         <ID>
           <String>Lingua</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>+mhRTMUAM8SV8uW40h0W26xRtoU=23-01-2021 16:41:5523-01-2021 16:16:47</TimeStamp>
+        <TimeStamp>CJGZ5bCSRs9wfTSLE/7CpBaWaKQ=24-01-2021 21:14:5923-01-2021 16:16:47</TimeStamp>
         <ID>
           <String>Religiao</String>
         </ID>
@@ -71,5 +71,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-01-23T18:03:25.573333Z</LastDeployed>
+  <LastDeployed>2021-01-24T21:15:16.936667Z</LastDeployed>
 </DeploymentSnapshot>
