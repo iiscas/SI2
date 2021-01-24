@@ -1,0 +1,270 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1fe5627b-36e6-41ef-8929-e513e1d17dc1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TP2</ID>
+  <Name>TP2</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>TP2</DataSourceID>
+  <Schema>
+    <xs:schema id="TP2" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="TP2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="d56979d2-11fb-41ab-bcd3-8f2212261360">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Flags" msprop:design-time-name="45b0959f-7401-4e29-8115-b938f056a5f5" msprop:DbTableName="Flags" msprop:FriendlyName="Flags" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Pais" msprop:design-time-name="7040a5ab-b8f8-425e-9a06-053e45c4f999" msprop:DbColumnName="Pais" msprop:FriendlyName="Pais">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Continente" msprop:design-time-name="85e80af1-a8bf-45a1-b6e2-1ef1e5681995" msprop:DbColumnName="Continente" msprop:FriendlyName="Continente">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quadrante" msprop:design-time-name="74224fc2-babc-41fd-a55c-e1590fec183c" msprop:DbColumnName="Quadrante" msprop:FriendlyName="Quadrante">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Area" msprop:design-time-name="8830f426-0c0a-4794-abcc-569b6cb4923a" msprop:DbColumnName="Area" msprop:FriendlyName="Area">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Populacao" msprop:design-time-name="10ba029c-34cf-49f6-ba8c-3a6044fb9a6d" msprop:DbColumnName="Populacao" msprop:FriendlyName="Populacao">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Lingua" msprop:design-time-name="e65d8bdf-b0ce-4bc7-9eb2-005d08b32aa1" msprop:DbColumnName="Lingua" msprop:FriendlyName="Lingua">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Religiao" msprop:design-time-name="ee2a8788-aaba-482d-8883-2250fdfeed95" msprop:DbColumnName="Religiao" msprop:FriendlyName="Religiao">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Riscas_V" msprop:design-time-name="16a50768-58c8-4552-a280-438026e3c752" msprop:DbColumnName="Riscas_V" msprop:FriendlyName="Riscas_V">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Riscas_H" msprop:design-time-name="e5d84349-c6a6-4d1d-b59a-40bb7ff16456" msprop:DbColumnName="Riscas_H" msprop:FriendlyName="Riscas_H">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cores" msprop:design-time-name="adf2168e-db8b-4226-90cb-ea6e4f5d118b" msprop:DbColumnName="Cores" msprop:FriendlyName="Cores">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="red" msprop:design-time-name="fe15bebc-97c9-4c98-9b52-6173ecfdfc52" msprop:DbColumnName="red" msprop:FriendlyName="red">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="green" msprop:design-time-name="518a5ed3-5fdf-4097-b0e0-26fd7d7e6cbd" msprop:DbColumnName="green" msprop:FriendlyName="green">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="blue" msprop:design-time-name="c692d8fc-13b2-4698-95f4-50d15e87665e" msprop:DbColumnName="blue" msprop:FriendlyName="blue">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="gold" msprop:design-time-name="36f632f7-d57d-4897-9b1a-89f7b3915b48" msprop:DbColumnName="gold" msprop:FriendlyName="gold">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="white" msprop:design-time-name="b2f46fdb-1d6a-4003-85d3-00ca90abc399" msprop:DbColumnName="white" msprop:FriendlyName="white">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="black" msprop:design-time-name="9a8c4bbd-d878-4457-919d-8291f9c6a00f" msprop:DbColumnName="black" msprop:FriendlyName="black">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="orange" msprop:design-time-name="c1f77688-0c4f-4872-9938-75b455bb8745" msprop:DbColumnName="orange" msprop:FriendlyName="orange">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="cor_principal" msprop:design-time-name="596ac794-304c-4869-9090-b585ca4acff1" msprop:DbColumnName="cor_principal" msprop:FriendlyName="cor_principal">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="circulos" msprop:design-time-name="89deb872-91c2-4d64-b6c5-fe0d60270200" msprop:DbColumnName="circulos" msprop:FriendlyName="circulos">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="crosses" msprop:design-time-name="06f70224-441d-4a45-95be-2db24d33bb1f" msprop:DbColumnName="crosses" msprop:FriendlyName="crosses">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="saltires" msprop:design-time-name="ea318abb-0193-4aaf-b72a-44735b0b2fea" msprop:DbColumnName="saltires" msprop:FriendlyName="saltires">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="quarters" msprop:design-time-name="9933db40-59b1-4ac0-b951-ecfcc98e0586" msprop:DbColumnName="quarters" msprop:FriendlyName="quarters">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sunstars" msprop:design-time-name="f1ca4c7a-293e-4abd-b70a-f682ddcf38a7" msprop:DbColumnName="sunstars" msprop:FriendlyName="sunstars">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="crescent" msprop:design-time-name="7e48014f-65f8-47ed-8d23-229e9a813f06" msprop:DbColumnName="crescent" msprop:FriendlyName="crescent">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="triangle" msprop:design-time-name="b8a9eba4-9cf0-402d-83e8-9638af96f47d" msprop:DbColumnName="triangle" msprop:FriendlyName="triangle">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="icon" msprop:design-time-name="bcef7d9b-f13e-450c-8ec7-694cbb6b883b" msprop:DbColumnName="icon" msprop:FriendlyName="icon">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="animate" msprop:design-time-name="1a661669-56c6-4018-8829-800f3b035eb4" msprop:DbColumnName="animate" msprop:FriendlyName="animate">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="text" msprop:design-time-name="e89d771b-1937-465e-b052-9f3d176a339a" msprop:DbColumnName="text" msprop:FriendlyName="text">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="topleft" msprop:design-time-name="14ea7a94-fcbe-457f-8c4a-1221d95dd9bf" msprop:DbColumnName="topleft" msprop:FriendlyName="topleft">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="botright" msprop:design-time-name="4d64f924-c4e2-4ec3-81af-db72ebb0036a" msprop:DbColumnName="botright" msprop:FriendlyName="botright">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <TP2 xmlns="" />
+  </Schema>
+</DataSourceView>

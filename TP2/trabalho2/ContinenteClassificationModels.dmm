@@ -1,0 +1,1660 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1217e27e-f31f-496b-8936-d919e90c2fbd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ContinenteClassificationModels</ID>
+  <Name>ContinenteClassificationModels</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Flags</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15328" scrolltop="-4527" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="36386" y="22098" backcolor="2632756" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001e0a50100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Flags" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Flags" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-15328</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4527</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b7d7fba5-10f6-4bf6-bc13-5f98e6a93d8f">
+    <DataSourceViewID>TP2</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a82b1b9f-61e3-4b66-a2ed-4b70f64b60df">
+      <ID>Animate</ID>
+      <Name>Animate</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a2de940-512c-48f0-9349-b0a9e592553d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f48bcc6e-a9a5-4538-a4d4-27d0582eae45">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>animate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="03afc88c-e721-48ee-ac2f-28bb9492c984">
+      <ID>Black</ID>
+      <Name>Black</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="041186e5-fed0-4b7d-bd52-a91899a1ea79">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0164b0a3-5590-421e-9f8f-66a6d40cbae9">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>black</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bf27f879-7f0d-42cd-a019-9d689a5bcf26">
+      <ID>Blue</ID>
+      <Name>Blue</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bc9e0d99-9728-4d44-b895-c61b7b02c7a5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b6cd8842-e95a-4096-892f-c7c2def5e1d0">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>blue</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a457ab46-93e5-487c-a25e-dbb6568b09a8">
+      <ID>Botright</ID>
+      <Name>Botright</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a03610b-3aaf-4760-9ab4-b3f78fe6ac0e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b77e45a-78d4-4a54-85f4-8865af30cec0">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>botright</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c6a0800f-77cc-48e8-a4d6-eda2cb5fb2d8">
+      <ID>Circulos</ID>
+      <Name>Circulos</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1431359b-510a-4354-b282-08d7bc3dcb4b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="acf95cbc-cfcd-487d-9d28-22160da70c01">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>circulos</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="270d3109-43a5-40f7-ac00-f1c7d0118a68">
+      <ID>Continente</ID>
+      <Name>Continente</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bad041d9-c393-4f92-ae16-ef0e69c705c5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8fa475ad-a035-4d40-9fbe-bf732513376a">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>Continente</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1a228862-b85e-478b-b0ff-a0687fb67924">
+      <ID>Cor Principal</ID>
+      <Name>Cor Principal</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ca404a49-2296-41bf-aca1-21c0bf9115d5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed53dbd0-b5e2-4fba-bba6-c968dff13acf">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>cor_principal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ec7fdaea-0b68-4b8d-b70c-008991fce817">
+      <ID>Cores</ID>
+      <Name>Cores</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="808c21b3-c4c5-4741-8dfd-312648a36c4a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="750b8c67-11bc-40f0-80a8-7e2cad34746d">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>Cores</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="54a6eec6-d284-405e-93ef-71e4ecf54440">
+      <ID>Crescent</ID>
+      <Name>Crescent</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="db4463aa-be7f-4304-831c-36407629f0d9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94bb2eea-0dc4-4f2a-b0c9-49ded085d255">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>crescent</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4d4cdd08-bc76-43fa-9066-33483a3ec49c">
+      <ID>Crosses</ID>
+      <Name>Crosses</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="49fc9a43-94be-4b05-9388-ea9267ab9185">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ea68d4b-2e36-4dc0-8ec7-dbd5aa46b731">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>crosses</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4a0ddaae-bd2e-4cc1-91e3-c2bdfa05a2b7">
+      <ID>Gold</ID>
+      <Name>Gold</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d516b341-bc45-4b19-b5e6-36e3588d1f7d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="15fdd039-f381-4fba-8a6d-0799a412d17c">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>gold</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4ea75bc2-e8a7-4a4f-833a-46fa173bf07e">
+      <ID>Green</ID>
+      <Name>Green</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="78bf5afb-d140-4ef1-8e50-c427a65f0c6e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fba08a34-4e9d-450f-bccc-cad4ddef4344">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>green</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4b24ff07-4a7d-4edd-aa82-35f6be6ccbc4">
+      <ID>Icon</ID>
+      <Name>Icon</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b5b6413c-98f1-474a-951f-ecebdd71dbca">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3106227-1eb2-43e5-9b01-52f958d94dee">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>icon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="216ff93b-1a49-46ac-8e92-0c62614e99af">
+      <ID>Orange</ID>
+      <Name>Orange</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="17b25dd9-6784-45d1-9a81-01b8534d6956">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c48f9612-aa68-4abc-b84d-0e3f375ede11">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>orange</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5a8bb9e0-79ea-43b2-af2e-af8ff492342c">
+      <ID>Pais</ID>
+      <Name>Pais</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4592e6f6-ae61-4dc6-9d33-f3453c8df81d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a49afec4-8abd-4078-ba7d-15ec56493ef8">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>Pais</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bb5ac9c0-d65a-449a-a309-d43dbac3aa3f">
+      <ID>Populacao</ID>
+      <Name>Populacao</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="705366c3-f3ad-42a1-9b4d-b43c298423d0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d83b815-8304-4ad0-8abb-786ea8a5ceda">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>Populacao</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="58ced08b-4fa4-4f36-bdc6-a8b8c43fe4ea">
+      <ID>Quadrante</ID>
+      <Name>Quadrante</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fade21fc-ec13-42b1-80ae-ee36f116552f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3149c06-3c31-4549-b60b-b5e537cd357d">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>Quadrante</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bfb45e07-ba67-4962-9da7-549e6dc1174e">
+      <ID>Quarters</ID>
+      <Name>Quarters</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="017e4a70-15dd-43b8-9589-54e2cdce971d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65eced97-61b1-41f2-8589-267800ae199e">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>quarters</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="15513a3a-d169-4a08-b8cf-6fd89552c92d">
+      <ID>Religiao</ID>
+      <Name>Religiao</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="90f40c55-797c-4291-a787-64eebe1b9703">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8ab00266-bd6a-4536-bc52-cb5885c94db0">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>Religiao</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fc0e249b-8c0a-415e-a3c6-ab62d20540c8">
+      <ID>Riscas H</ID>
+      <Name>Riscas H</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="73b6637a-3868-4a60-801c-46d5d012650e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e12a271e-be2e-427e-9bbb-d8b6fbc4d642">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>Riscas_H</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="910088d8-0953-44b0-b49a-60e3c8a5226f">
+      <ID>Riscas V</ID>
+      <Name>Riscas V</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c8675d4a-c17b-4163-9613-b32164a5a2af">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ce97e54-a69b-4eee-8881-27d7861a703a">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>Riscas_V</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5492e834-d6e8-46bb-bcbe-116e0de88a67">
+      <ID>Saltires</ID>
+      <Name>Saltires</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f8bf1863-7783-44e6-b669-d486e022903c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="83a8a9fd-4fcc-4f41-8b3b-c98aa403f320">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>saltires</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="eef406bc-200c-4625-b22f-e69a8d5a1203">
+      <ID>Sunstars</ID>
+      <Name>Sunstars</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b14d082b-a13c-45b3-903b-bb6b880bda4a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1d81b3e-ee5c-4be3-a622-59e9f9cc0600">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>sunstars</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ef26976b-d68a-4ae5-814a-59603b0c897a">
+      <ID>Text</ID>
+      <Name>Text</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c8d4d18f-1926-4ed6-9f99-08efc6e1bbe6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1dd0eade-8eab-4025-8d8b-23faac673df6">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>text</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9ff08409-59ce-4241-87c1-4f3058e08946">
+      <ID>Topleft</ID>
+      <Name>Topleft</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0cd2e67c-28c1-45f4-8b02-2374eb4e7fe9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11212b6e-e883-45a2-ab59-39e7ec751b09">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>topleft</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9ebe06df-ecb8-42d8-9957-b9c7938c0737">
+      <ID>Triangle</ID>
+      <Name>Triangle</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="91b20cca-3b5e-4175-b5fa-8e6a5d3940df">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4e0c4ef-8ef3-4337-bf95-2355733dbdbb">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>triangle</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="969fb3fe-3076-4309-96b9-8b5042598ddf">
+      <ID>White</ID>
+      <Name>White</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="037b6356-ada2-4b6c-92df-062f2b3d9a06">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1fe096c4-3d90-4acf-a29d-8a761fc5f28c">
+            <TableID>dbo_Flags</TableID>
+            <ColumnID>white</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="b16596d8-c4c1-483b-b132-7cbb2102eefb">
+      <ID>ContinenteDecisionTree1</ID>
+      <Name>DecisionTreeAll</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_SUPPORT</Name>
+          <Value xsi:type="xsd:double">2</Value>
+        </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>SCORE_METHOD</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="9fee7b71-8e23-4350-87aa-bb2b9edf3f3c">
+          <ID>Animate</ID>
+          <Name>Animate</Name>
+          <SourceColumnID>Animate</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b95ebb87-0504-4970-bd08-e3de2f65041f">
+          <ID>Black</ID>
+          <Name>Black</Name>
+          <SourceColumnID>Black</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ffc7374f-f808-4c1e-ac2e-2cf65da9676d">
+          <ID>Blue</ID>
+          <Name>Blue</Name>
+          <SourceColumnID>Blue</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2a1b462a-0522-4f3e-8d2b-793dadff3bdd">
+          <ID>Botright</ID>
+          <Name>Botright</Name>
+          <SourceColumnID>Botright</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ad07e764-09ef-47da-a9ff-530d77320ea2">
+          <ID>Circulos</ID>
+          <Name>Circulos</Name>
+          <SourceColumnID>Circulos</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9044452e-c999-4d09-a25d-445dce20f6ac">
+          <ID>Continente</ID>
+          <Name>Continente</Name>
+          <SourceColumnID>Continente</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="1bb55f0a-1927-44e7-a6ff-3d2e6ebe0aa9">
+          <ID>Cor Principal</ID>
+          <Name>Cor Principal</Name>
+          <SourceColumnID>Cor Principal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1c6d4668-9815-47c1-bbc8-75ba55ea3193">
+          <ID>Cores</ID>
+          <Name>Cores</Name>
+          <SourceColumnID>Cores</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ee468cba-9dd3-48cb-84ba-772a7fb0d8eb">
+          <ID>Crescent</ID>
+          <Name>Crescent</Name>
+          <SourceColumnID>Crescent</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1470cbaa-d3be-4d5a-8fb3-438ab208d58a">
+          <ID>Crosses</ID>
+          <Name>Crosses</Name>
+          <SourceColumnID>Crosses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f1ddd7d9-9c67-4108-9ed7-a6aade615524">
+          <ID>Gold</ID>
+          <Name>Gold</Name>
+          <SourceColumnID>Gold</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8ed5bfaf-639e-4f78-9a38-591b1581218f">
+          <ID>Green</ID>
+          <Name>Green</Name>
+          <SourceColumnID>Green</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1aff103f-06b2-49bb-8542-0a2cccc30cb3">
+          <ID>Icon</ID>
+          <Name>Icon</Name>
+          <SourceColumnID>Icon</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4537512c-7789-416f-9ee2-d8cbe65e31cd">
+          <ID>Orange</ID>
+          <Name>Orange</Name>
+          <SourceColumnID>Orange</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4a8bdd36-77e1-4290-b2dd-6749c77ccc69">
+          <ID>Pais</ID>
+          <Name>Pais</Name>
+          <SourceColumnID>Pais</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="8ac47a89-f8b8-4f55-b378-5cfda09ec5f1">
+          <ID>Populacao</ID>
+          <Name>Populacao</Name>
+          <SourceColumnID>Populacao</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="daa68117-9df1-4be4-8e25-b5c9ea34b352">
+          <ID>Quadrante</ID>
+          <Name>Quadrante</Name>
+          <SourceColumnID>Quadrante</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8ca6cad6-b512-4ede-a58a-8bcb533abfd2">
+          <ID>Quarters</ID>
+          <Name>Quarters</Name>
+          <SourceColumnID>Quarters</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c21397ad-4de2-4124-84f7-86081c38245a">
+          <ID>Religiao</ID>
+          <Name>Religiao</Name>
+          <SourceColumnID>Religiao</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a3ccae45-a2c6-4722-8c8e-ede60f536656">
+          <ID>Riscas H</ID>
+          <Name>Riscas H</Name>
+          <SourceColumnID>Riscas H</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3f183e10-8b08-4583-a6df-c5d75f87f34f">
+          <ID>Riscas V</ID>
+          <Name>Riscas V</Name>
+          <SourceColumnID>Riscas V</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a2a29d1f-b63b-46cb-933f-41b43c17f8d0">
+          <ID>Saltires</ID>
+          <Name>Saltires</Name>
+          <SourceColumnID>Saltires</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="697f56fb-e5f5-48f2-875c-fdd959cd5b2c">
+          <ID>Sunstars</ID>
+          <Name>Sunstars</Name>
+          <SourceColumnID>Sunstars</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="df7113bd-2128-493f-bed9-b553e7b64fe6">
+          <ID>Text</ID>
+          <Name>Text</Name>
+          <SourceColumnID>Text</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d26b04c8-f3ad-446e-89b4-d796d248bce3">
+          <ID>Topleft</ID>
+          <Name>Topleft</Name>
+          <SourceColumnID>Topleft</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="382e3450-5022-47ad-8cf6-e27f6362a586">
+          <ID>Triangle</ID>
+          <Name>Triangle</Name>
+          <SourceColumnID>Triangle</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="58b0d09e-8d5a-451d-bd53-3f928922eb1e">
+          <ID>White</ID>
+          <Name>White</Name>
+          <SourceColumnID>White</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="4c9bd8d8-5c8e-4dba-8791-d2e84c6f1c3c">
+      <ID>ContinenteDecisionTree4</ID>
+      <Name>DecisionTreeFlags</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_SUPPORT</Name>
+          <Value xsi:type="xsd:double">2</Value>
+        </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>SCORE_METHOD</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="373b0f66-029c-42ac-97dc-e939b0afff14">
+          <ID>Animate</ID>
+          <Name>Animate</Name>
+          <SourceColumnID>Animate</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0f8fbdbb-2e58-4c92-a1d6-b766d8089230">
+          <ID>Black</ID>
+          <Name>Black</Name>
+          <SourceColumnID>Black</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a0ae9edc-1730-4fd8-a896-8f402b4dda6f">
+          <ID>Blue</ID>
+          <Name>Blue</Name>
+          <SourceColumnID>Blue</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="37232d65-99b0-4000-a5cb-3041c91c132c">
+          <ID>Botright</ID>
+          <Name>Botright</Name>
+          <SourceColumnID>Botright</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="885ddf89-ea91-4829-a3b0-ee68bf957648">
+          <ID>Circulos</ID>
+          <Name>Circulos</Name>
+          <SourceColumnID>Circulos</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e0597f52-1ebc-4fd2-bcdd-8fa4289005e4">
+          <ID>Continente</ID>
+          <Name>Continente</Name>
+          <SourceColumnID>Continente</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="dda37624-6962-4b07-9003-5d00b1d78ba9">
+          <ID>Cor Principal</ID>
+          <Name>Cor Principal</Name>
+          <SourceColumnID>Cor Principal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="43eca355-76fa-4ca8-8801-4960ad96f659">
+          <ID>Cores</ID>
+          <Name>Cores</Name>
+          <SourceColumnID>Cores</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="46a788c7-2b1e-4dd1-bc41-7b73891becfe">
+          <ID>Crescent</ID>
+          <Name>Crescent</Name>
+          <SourceColumnID>Crescent</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9d7fa4e9-69d2-4bce-adeb-45ce5da66ae6">
+          <ID>Crosses</ID>
+          <Name>Crosses</Name>
+          <SourceColumnID>Crosses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b63da1f6-2a9a-44ca-84f0-5e847738c727">
+          <ID>Gold</ID>
+          <Name>Gold</Name>
+          <SourceColumnID>Gold</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="406580a5-ea73-4c84-9e2d-4c711efa25a8">
+          <ID>Green</ID>
+          <Name>Green</Name>
+          <SourceColumnID>Green</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="29892458-01d6-4080-980d-15519a911ef6">
+          <ID>Icon</ID>
+          <Name>Icon</Name>
+          <SourceColumnID>Icon</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="150fcaba-7eea-4bb4-8c94-703fb52bcec1">
+          <ID>Orange</ID>
+          <Name>Orange</Name>
+          <SourceColumnID>Orange</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="977fcc59-0e8f-4dc1-b855-288d93bc0255">
+          <ID>Pais</ID>
+          <Name>Pais</Name>
+          <SourceColumnID>Pais</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="868fb8e5-fcef-45b6-adcc-dbb9d71db920">
+          <ID>Quarters</ID>
+          <Name>Quarters</Name>
+          <SourceColumnID>Quarters</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3f7f48c5-ff0e-4e4f-b0f3-23733ef9560b">
+          <ID>Riscas H</ID>
+          <Name>Riscas H</Name>
+          <SourceColumnID>Riscas H</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a79b78a7-d457-4c1b-ad5b-a74afd8cb7bc">
+          <ID>Riscas V</ID>
+          <Name>Riscas V</Name>
+          <SourceColumnID>Riscas V</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="675dccb9-b1a6-4ddd-b179-dc1c44a1a2e2">
+          <ID>Saltires</ID>
+          <Name>Saltires</Name>
+          <SourceColumnID>Saltires</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="910f67df-354d-40ff-8bd1-9190b513284e">
+          <ID>Sunstars</ID>
+          <Name>Sunstars</Name>
+          <SourceColumnID>Sunstars</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f4c1aa43-fc1c-4134-b41c-506e7fd2f848">
+          <ID>Text</ID>
+          <Name>Text</Name>
+          <SourceColumnID>Text</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7353e751-0319-456c-84d0-e1c22bac71c9">
+          <ID>Topleft</ID>
+          <Name>Topleft</Name>
+          <SourceColumnID>Topleft</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f280a743-aa0d-4d7f-b45d-36af4897c4c4">
+          <ID>Triangle</ID>
+          <Name>Triangle</Name>
+          <SourceColumnID>Triangle</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7ca489da-a9f8-4aa8-91fa-b37c1fb22425">
+          <ID>White</ID>
+          <Name>White</Name>
+          <SourceColumnID>White</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="9dee9555-ed5e-4252-afbb-46b442a38b83">
+      <ID>ContinenteNaiveBayes1</ID>
+      <Name>NaiveBayesFlags</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="d18001ea-c26b-4feb-9cc5-f46b8a0f97ea">
+          <ID>Animate</ID>
+          <Name>Animate</Name>
+          <SourceColumnID>Animate</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d96ec81a-4628-48b4-a3ce-11097621e4d7">
+          <ID>Black</ID>
+          <Name>Black</Name>
+          <SourceColumnID>Black</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="89f5175e-e83e-4f4d-8239-93875afe4029">
+          <ID>Blue</ID>
+          <Name>Blue</Name>
+          <SourceColumnID>Blue</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d5b683fd-a382-4071-bbf8-624139788b5f">
+          <ID>Botright</ID>
+          <Name>Botright</Name>
+          <SourceColumnID>Botright</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1f065d51-763d-4527-b8ab-fdb33181d00e">
+          <ID>Circulos</ID>
+          <Name>Circulos</Name>
+          <SourceColumnID>Circulos</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ceed8e42-af07-4724-aef1-e85cacaa8cab">
+          <ID>Continente</ID>
+          <Name>Continente</Name>
+          <SourceColumnID>Continente</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="7040703e-61d5-4981-aa76-d319d1132cd3">
+          <ID>Cor Principal</ID>
+          <Name>Cor Principal</Name>
+          <SourceColumnID>Cor Principal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8f41cd62-76f4-4242-94b3-c0bb2562c8be">
+          <ID>Cores</ID>
+          <Name>Cores</Name>
+          <SourceColumnID>Cores</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c2bdbd03-f667-4c06-9807-d9db743d96e0">
+          <ID>Crescent</ID>
+          <Name>Crescent</Name>
+          <SourceColumnID>Crescent</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c78fa4d4-146d-4b18-9350-8781e36a69d1">
+          <ID>Crosses</ID>
+          <Name>Crosses</Name>
+          <SourceColumnID>Crosses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="03c2e798-4ece-4906-b079-a9bac62111bf">
+          <ID>Gold</ID>
+          <Name>Gold</Name>
+          <SourceColumnID>Gold</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3e369f0e-6e4f-479b-8a63-e1b8848ac781">
+          <ID>Green</ID>
+          <Name>Green</Name>
+          <SourceColumnID>Green</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="62c08b03-28e0-4444-b760-368786c22b5f">
+          <ID>Icon</ID>
+          <Name>Icon</Name>
+          <SourceColumnID>Icon</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c7d4ab8b-d744-47a2-b796-7ebcc8898adf">
+          <ID>Orange</ID>
+          <Name>Orange</Name>
+          <SourceColumnID>Orange</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="93f8bc80-3f64-40ea-becd-f4f67d41d509">
+          <ID>Pais</ID>
+          <Name>Pais</Name>
+          <SourceColumnID>Pais</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="6c8f246b-7ce2-41fc-9401-f86d93d52334">
+          <ID>Quarters</ID>
+          <Name>Quarters</Name>
+          <SourceColumnID>Quarters</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d8544dcb-688d-4d53-b86b-fb5e2eb7ac36">
+          <ID>Riscas H</ID>
+          <Name>Riscas H</Name>
+          <SourceColumnID>Riscas H</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="886d71a5-a580-4ba2-a3ba-3e7b353c5b7e">
+          <ID>Riscas V</ID>
+          <Name>Riscas V</Name>
+          <SourceColumnID>Riscas V</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="23098e2c-971b-43e7-9c61-e5aacabfa17b">
+          <ID>Saltires</ID>
+          <Name>Saltires</Name>
+          <SourceColumnID>Saltires</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6bae6aa5-63ca-41e0-9898-dfb706f7f73d">
+          <ID>Sunstars</ID>
+          <Name>Sunstars</Name>
+          <SourceColumnID>Sunstars</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7e3bb849-9783-47fb-a18e-9f897304058a">
+          <ID>Text</ID>
+          <Name>Text</Name>
+          <SourceColumnID>Text</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3464bd2f-f438-417c-ab43-b0d3e47626d4">
+          <ID>Topleft</ID>
+          <Name>Topleft</Name>
+          <SourceColumnID>Topleft</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c47d38e4-db69-4263-a090-f2f79adec4ab">
+          <ID>Triangle</ID>
+          <Name>Triangle</Name>
+          <SourceColumnID>Triangle</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a8727644-d0e2-4bba-a68f-5d579d9ad291">
+          <ID>White</ID>
+          <Name>White</Name>
+          <SourceColumnID>White</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="52a06a75-ffa3-4025-a711-293ab6f4a0ab">
+      <ID>ContinenteNN1</ID>
+      <Name>NeuralNetworkFlags</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Neural_Network</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="4be1b65f-093c-4447-ad07-cb455478cd39">
+          <ID>Animate</ID>
+          <Name>Animate</Name>
+          <SourceColumnID>Animate</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="58e29aac-acd3-49de-b269-c66397df30d4">
+          <ID>Black</ID>
+          <Name>Black</Name>
+          <SourceColumnID>Black</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="673eff4b-74a3-4f89-a1ba-13f4c31fd152">
+          <ID>Blue</ID>
+          <Name>Blue</Name>
+          <SourceColumnID>Blue</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ae50f6aa-574e-4593-ba33-5c83975abc1c">
+          <ID>Botright</ID>
+          <Name>Botright</Name>
+          <SourceColumnID>Botright</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="40082e79-091c-42a1-a442-4ea97adc4b7e">
+          <ID>Circulos</ID>
+          <Name>Circulos</Name>
+          <SourceColumnID>Circulos</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5b150418-523b-4db6-bf23-ab57f0de32b1">
+          <ID>Continente</ID>
+          <Name>Continente</Name>
+          <SourceColumnID>Continente</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="ad0df094-2c3f-4a82-b473-96d076e6faf9">
+          <ID>Cor Principal</ID>
+          <Name>Cor Principal</Name>
+          <SourceColumnID>Cor Principal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c38bfc5c-fad3-4e45-b575-572064f4bfed">
+          <ID>Cores</ID>
+          <Name>Cores</Name>
+          <SourceColumnID>Cores</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="85fb4d22-18fa-4ec5-85ae-5fd730d09aed">
+          <ID>Crescent</ID>
+          <Name>Crescent</Name>
+          <SourceColumnID>Crescent</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2c04fa3c-4d39-483b-929a-cbe56d1a94ed">
+          <ID>Crosses</ID>
+          <Name>Crosses</Name>
+          <SourceColumnID>Crosses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6b17d137-aa59-42c1-8cad-9a515a39366b">
+          <ID>Gold</ID>
+          <Name>Gold</Name>
+          <SourceColumnID>Gold</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="dd8b511b-bf78-41e2-bed5-574d8365c727">
+          <ID>Green</ID>
+          <Name>Green</Name>
+          <SourceColumnID>Green</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="44aa0d4d-7ee8-4ca6-b5bb-a6883ea07b3d">
+          <ID>Icon</ID>
+          <Name>Icon</Name>
+          <SourceColumnID>Icon</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6c3d992c-969b-4257-8b0a-935f9a4e795f">
+          <ID>Orange</ID>
+          <Name>Orange</Name>
+          <SourceColumnID>Orange</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="50cc711c-1a4e-41a8-b9a6-08d56850cdfb">
+          <ID>Pais</ID>
+          <Name>Pais</Name>
+          <SourceColumnID>Pais</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="e32c8fbc-2dc2-40ec-8fec-6ca64c7247d9">
+          <ID>Quarters</ID>
+          <Name>Quarters</Name>
+          <SourceColumnID>Quarters</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ff7286a4-0eb3-45ec-a805-092981661966">
+          <ID>Riscas H</ID>
+          <Name>Riscas H</Name>
+          <SourceColumnID>Riscas H</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4b5a7e63-5548-4382-a4e1-59cdf071091b">
+          <ID>Riscas V</ID>
+          <Name>Riscas V</Name>
+          <SourceColumnID>Riscas V</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c9df1ba7-2958-43d7-a60b-a641089894c3">
+          <ID>Saltires</ID>
+          <Name>Saltires</Name>
+          <SourceColumnID>Saltires</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4e92d51c-a98f-4471-8e27-62e760b15a0b">
+          <ID>Sunstars</ID>
+          <Name>Sunstars</Name>
+          <SourceColumnID>Sunstars</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="49e5d6e9-cbce-423c-99bb-2e8fcc2a985a">
+          <ID>Text</ID>
+          <Name>Text</Name>
+          <SourceColumnID>Text</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6a57496c-f506-42f4-a908-fbe36ffdca68">
+          <ID>Topleft</ID>
+          <Name>Topleft</Name>
+          <SourceColumnID>Topleft</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="db2b0f6c-df72-479a-823c-1b8f291ca7b8">
+          <ID>Triangle</ID>
+          <Name>Triangle</Name>
+          <SourceColumnID>Triangle</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a18bf582-47a5-46ba-b150-a245efe40a6a">
+          <ID>White</ID>
+          <Name>White</Name>
+          <SourceColumnID>White</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="64ebc768-2ed1-494f-acd1-baeb451295f6">
+      <ID>ContinenteClustering1</ID>
+      <Name>ClusteringFlags</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="9f838332-2053-4c15-b817-daf32e6e6e47">
+          <ID>Animate</ID>
+          <Name>Animate</Name>
+          <SourceColumnID>Animate</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5182a793-f594-44e9-8f60-d4a69ab775b9">
+          <ID>Black</ID>
+          <Name>Black</Name>
+          <SourceColumnID>Black</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="02f1534f-6fc4-4b28-9bec-cc4efe335395">
+          <ID>Blue</ID>
+          <Name>Blue</Name>
+          <SourceColumnID>Blue</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b08c91ab-03ed-4bfb-a1cc-0b17edab025e">
+          <ID>Botright</ID>
+          <Name>Botright</Name>
+          <SourceColumnID>Botright</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a0f0cba1-512d-43e9-933a-5ff16e08584c">
+          <ID>Circulos</ID>
+          <Name>Circulos</Name>
+          <SourceColumnID>Circulos</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1e679960-46ff-4a68-83bc-f9354a35f912">
+          <ID>Continente</ID>
+          <Name>Continente</Name>
+          <SourceColumnID>Continente</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="e4124635-d65a-4c52-a963-2ff8bb9aeace">
+          <ID>Cor Principal</ID>
+          <Name>Cor Principal</Name>
+          <SourceColumnID>Cor Principal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b9c923d9-40f3-4c19-bd8f-199c5e4f7334">
+          <ID>Cores</ID>
+          <Name>Cores</Name>
+          <SourceColumnID>Cores</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="fbbb0607-aae7-487b-803b-14c35ca7bcfa">
+          <ID>Crescent</ID>
+          <Name>Crescent</Name>
+          <SourceColumnID>Crescent</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2c99ac43-48ff-4019-bb9b-16e2ad38554d">
+          <ID>Crosses</ID>
+          <Name>Crosses</Name>
+          <SourceColumnID>Crosses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="75d85fe4-b622-431b-bda8-318230bbd216">
+          <ID>Gold</ID>
+          <Name>Gold</Name>
+          <SourceColumnID>Gold</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="744d29e6-b4dd-4b42-a311-283c0d231c14">
+          <ID>Green</ID>
+          <Name>Green</Name>
+          <SourceColumnID>Green</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="39f9ff58-3cef-4a61-8522-c18ef2d0f36f">
+          <ID>Icon</ID>
+          <Name>Icon</Name>
+          <SourceColumnID>Icon</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e9844f5a-aaba-4e50-a7af-e96617af6eb0">
+          <ID>Orange</ID>
+          <Name>Orange</Name>
+          <SourceColumnID>Orange</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a1b373f9-d22e-403f-bf87-933856410418">
+          <ID>Pais</ID>
+          <Name>Pais</Name>
+          <SourceColumnID>Pais</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="88e4f2ec-e5e1-47ab-9e71-c6b414c197a1">
+          <ID>Quarters</ID>
+          <Name>Quarters</Name>
+          <SourceColumnID>Quarters</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0690f2d4-0de6-4018-80cc-13b46da770c7">
+          <ID>Riscas H</ID>
+          <Name>Riscas H</Name>
+          <SourceColumnID>Riscas H</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5b4f69b1-5e9a-4813-9083-5bc3f07931e6">
+          <ID>Riscas V</ID>
+          <Name>Riscas V</Name>
+          <SourceColumnID>Riscas V</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1bbe0f2e-101f-457d-86de-520543ada5c6">
+          <ID>Saltires</ID>
+          <Name>Saltires</Name>
+          <SourceColumnID>Saltires</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="73d44217-7338-4763-923e-46fb96b6f7f4">
+          <ID>Sunstars</ID>
+          <Name>Sunstars</Name>
+          <SourceColumnID>Sunstars</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="fcd82bfa-fdc5-417c-8ab4-03deecadaba7">
+          <ID>Text</ID>
+          <Name>Text</Name>
+          <SourceColumnID>Text</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b1e38165-38bd-451f-a2b1-ed82f5dd6f83">
+          <ID>Topleft</ID>
+          <Name>Topleft</Name>
+          <SourceColumnID>Topleft</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e8fff561-9059-48bc-8549-b3c5a6f066b9">
+          <ID>Triangle</ID>
+          <Name>Triangle</Name>
+          <SourceColumnID>Triangle</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="686fb401-a30a-439c-a708-3a74651723ae">
+          <ID>White</ID>
+          <Name>White</Name>
+          <SourceColumnID>White</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="68758201-c7dd-4503-aaa0-e333e1791d10">
+      <ID>ContinenteNaiveBayes2</ID>
+      <Name>NaiveBayesAll</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="00bd017b-60c6-4e27-be54-193f5d392ea8">
+          <ID>Animate</ID>
+          <Name>Animate</Name>
+          <SourceColumnID>Animate</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="483b789a-a296-40c5-95cb-29f930a3b5c0">
+          <ID>Black</ID>
+          <Name>Black</Name>
+          <SourceColumnID>Black</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="88ac866f-073b-4f3d-a459-90d6a6c13464">
+          <ID>Blue</ID>
+          <Name>Blue</Name>
+          <SourceColumnID>Blue</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d20a6882-9f12-41d7-81a9-060f6d39ecd1">
+          <ID>Botright</ID>
+          <Name>Botright</Name>
+          <SourceColumnID>Botright</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1f6e2922-5bc0-4c4c-bd17-c3afbf89c413">
+          <ID>Circulos</ID>
+          <Name>Circulos</Name>
+          <SourceColumnID>Circulos</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="cb3bcf33-db1f-46dc-b808-8e824d57302e">
+          <ID>Continente</ID>
+          <Name>Continente</Name>
+          <SourceColumnID>Continente</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="86914df9-32be-4cf7-9f3b-aedbcc2fbb3a">
+          <ID>Cor Principal</ID>
+          <Name>Cor Principal</Name>
+          <SourceColumnID>Cor Principal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="55d443af-7dbd-4176-b2c1-077a52a12dbf">
+          <ID>Cores</ID>
+          <Name>Cores</Name>
+          <SourceColumnID>Cores</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2507cf07-641b-4864-9029-ab012ea9b9a8">
+          <ID>Crescent</ID>
+          <Name>Crescent</Name>
+          <SourceColumnID>Crescent</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="07bfb39e-085d-4f90-a5a9-6e29bb6e3057">
+          <ID>Crosses</ID>
+          <Name>Crosses</Name>
+          <SourceColumnID>Crosses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="222bf90e-9326-4869-9873-e251212ed567">
+          <ID>Gold</ID>
+          <Name>Gold</Name>
+          <SourceColumnID>Gold</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5f06c549-0336-404c-8e08-9c41f1b4c1fa">
+          <ID>Green</ID>
+          <Name>Green</Name>
+          <SourceColumnID>Green</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="cf21a555-58be-4557-a454-7190cd7f0cc8">
+          <ID>Icon</ID>
+          <Name>Icon</Name>
+          <SourceColumnID>Icon</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e44a163d-d143-4c53-8885-872d27b9eacc">
+          <ID>Orange</ID>
+          <Name>Orange</Name>
+          <SourceColumnID>Orange</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="567e37da-ff77-4910-b60b-bb58be68b2d7">
+          <ID>Pais</ID>
+          <Name>Pais</Name>
+          <SourceColumnID>Pais</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="4ca44f13-73da-4c70-9c32-c556dcb37b40">
+          <ID>Populacao</ID>
+          <Name>Populacao</Name>
+          <SourceColumnID>Populacao</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="89758715-503f-460f-96c1-1f6f0254063b">
+          <ID>Quadrante</ID>
+          <Name>Quadrante</Name>
+          <SourceColumnID>Quadrante</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="200dbd05-48d9-408e-9cd3-8842465c4b04">
+          <ID>Quarters</ID>
+          <Name>Quarters</Name>
+          <SourceColumnID>Quarters</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c54636cd-3f1b-4161-a17c-fca80d75b956">
+          <ID>Religiao</ID>
+          <Name>Religiao</Name>
+          <SourceColumnID>Religiao</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7b0ef24a-940f-4aa1-9dd2-4d2e4e8a5dcc">
+          <ID>Riscas H</ID>
+          <Name>Riscas H</Name>
+          <SourceColumnID>Riscas H</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="bf08965c-a56b-4a41-ab6c-ecc855fa0ca5">
+          <ID>Riscas V</ID>
+          <Name>Riscas V</Name>
+          <SourceColumnID>Riscas V</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4ba70eec-2457-4a29-8bb0-918e5d356c25">
+          <ID>Saltires</ID>
+          <Name>Saltires</Name>
+          <SourceColumnID>Saltires</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ce0e1be9-e28d-4e77-bcac-121b66e9acdb">
+          <ID>Sunstars</ID>
+          <Name>Sunstars</Name>
+          <SourceColumnID>Sunstars</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="cda2a887-4c28-41fe-b54b-b8e09cfb04dd">
+          <ID>Text</ID>
+          <Name>Text</Name>
+          <SourceColumnID>Text</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4c6c4237-b2fa-46b0-8211-5d13ffc76ebb">
+          <ID>Topleft</ID>
+          <Name>Topleft</Name>
+          <SourceColumnID>Topleft</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5bd398bb-7041-4a14-a8d7-2ddad86a6cc2">
+          <ID>Triangle</ID>
+          <Name>Triangle</Name>
+          <SourceColumnID>Triangle</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7f53ba19-979e-4dd6-b9e5-50703c03d1b6">
+          <ID>White</ID>
+          <Name>White</Name>
+          <SourceColumnID>White</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="b30af234-e61b-466e-bb4f-7b1f66eb3aa4">
+      <ID>ContinenteNN2</ID>
+      <Name>NeuralNetworkAll</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Neural_Network</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="7b403102-5a0a-4e00-b86a-a9e781400334">
+          <ID>Animate</ID>
+          <Name>Animate</Name>
+          <SourceColumnID>Animate</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c7b9511b-0d65-4e08-839e-2328ad276303">
+          <ID>Black</ID>
+          <Name>Black</Name>
+          <SourceColumnID>Black</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6c510fce-e70c-48fa-a917-79e1e9c6eccb">
+          <ID>Blue</ID>
+          <Name>Blue</Name>
+          <SourceColumnID>Blue</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9eb92225-3936-45e4-87eb-f7ae1ece5f0a">
+          <ID>Botright</ID>
+          <Name>Botright</Name>
+          <SourceColumnID>Botright</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e4dca692-fd82-4c7c-8f3b-7a7b56423efb">
+          <ID>Circulos</ID>
+          <Name>Circulos</Name>
+          <SourceColumnID>Circulos</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d71bafba-1886-4208-afb5-c6ba2ab28581">
+          <ID>Continente</ID>
+          <Name>Continente</Name>
+          <SourceColumnID>Continente</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="82a94d97-4d8d-4e63-8971-73e38ae28459">
+          <ID>Cor Principal</ID>
+          <Name>Cor Principal</Name>
+          <SourceColumnID>Cor Principal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2cc65fa0-b0cc-4b7f-88f2-52168fb93cce">
+          <ID>Cores</ID>
+          <Name>Cores</Name>
+          <SourceColumnID>Cores</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="630eb563-c52a-47b1-b7d4-2a1c2f535f4f">
+          <ID>Crescent</ID>
+          <Name>Crescent</Name>
+          <SourceColumnID>Crescent</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="86349c18-f569-4ab3-8dcf-55bc100f7604">
+          <ID>Crosses</ID>
+          <Name>Crosses</Name>
+          <SourceColumnID>Crosses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c67f659a-fae2-4f78-aa71-105409f495cd">
+          <ID>Gold</ID>
+          <Name>Gold</Name>
+          <SourceColumnID>Gold</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ef8dab5e-ac75-4d1c-b9ec-e27d3fd4f909">
+          <ID>Green</ID>
+          <Name>Green</Name>
+          <SourceColumnID>Green</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4631343b-43a6-4b0c-92d1-500a73c89bb0">
+          <ID>Icon</ID>
+          <Name>Icon</Name>
+          <SourceColumnID>Icon</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="50cf43ca-431a-42c5-95ef-576f3026a7de">
+          <ID>Orange</ID>
+          <Name>Orange</Name>
+          <SourceColumnID>Orange</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3a22ec51-59d6-4a2f-bb45-1756146bc666">
+          <ID>Pais</ID>
+          <Name>Pais</Name>
+          <SourceColumnID>Pais</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="ccd60372-ed69-443c-9e03-46b6b98dff37">
+          <ID>Quarters</ID>
+          <Name>Quarters</Name>
+          <SourceColumnID>Quarters</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2bec46c9-f53e-42f4-b62c-802fc2697119">
+          <ID>Riscas H</ID>
+          <Name>Riscas H</Name>
+          <SourceColumnID>Riscas H</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f6f17ef2-3370-4917-b787-fd08f9e38e8d">
+          <ID>Riscas V</ID>
+          <Name>Riscas V</Name>
+          <SourceColumnID>Riscas V</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="22c50d58-43e9-4a82-b847-b44403ac73e2">
+          <ID>Saltires</ID>
+          <Name>Saltires</Name>
+          <SourceColumnID>Saltires</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="082ae807-b47f-4134-923c-6b395970ddeb">
+          <ID>Sunstars</ID>
+          <Name>Sunstars</Name>
+          <SourceColumnID>Sunstars</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b7363a55-e08b-45c7-8fc6-a2e29911936b">
+          <ID>Text</ID>
+          <Name>Text</Name>
+          <SourceColumnID>Text</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="46fbfe41-09ef-4274-bb91-1168e3359d08">
+          <ID>Topleft</ID>
+          <Name>Topleft</Name>
+          <SourceColumnID>Topleft</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6e244519-e66d-4db9-bb74-e251c716a553">
+          <ID>Triangle</ID>
+          <Name>Triangle</Name>
+          <SourceColumnID>Triangle</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d5f6a4b8-790b-4b3e-afc9-2faf6e327af1">
+          <ID>White</ID>
+          <Name>White</Name>
+          <SourceColumnID>White</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="dfce0650-b1c9-423c-bd6f-eecd542cbb1d">
+          <ID>Religiao</ID>
+          <Name>Religiao</Name>
+          <SourceColumnID>Religiao</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="736e1f37-5463-49e3-8721-ee83efebfd24">
+          <ID>Populacao</ID>
+          <Name>Populacao</Name>
+          <SourceColumnID>Populacao</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="dba80f8d-4b78-45ab-9e9b-8851fb56dd21">
+          <ID>Quadrante</ID>
+          <Name>Quadrante</Name>
+          <SourceColumnID>Quadrante</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="46ce2d62-4ab6-4b92-ba94-8a9578732e5f">
+      <ID>ClusteringAll</ID>
+      <Name>ClusteringAll</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="09e802ee-9da1-4a79-aeb3-aaf552730fe1">
+          <ID>Animate</ID>
+          <Name>Animate</Name>
+          <SourceColumnID>Animate</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b540cef4-1a61-497a-a57b-09dc1f1d0049">
+          <ID>Black</ID>
+          <Name>Black</Name>
+          <SourceColumnID>Black</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1ae70d72-5163-45c0-a1b9-8a28751cd416">
+          <ID>Blue</ID>
+          <Name>Blue</Name>
+          <SourceColumnID>Blue</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="73e88a73-707b-46d4-a2a7-62e59ff107ed">
+          <ID>Botright</ID>
+          <Name>Botright</Name>
+          <SourceColumnID>Botright</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="54a75e8e-6c4e-4c91-bdd6-a6627257061e">
+          <ID>Circulos</ID>
+          <Name>Circulos</Name>
+          <SourceColumnID>Circulos</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0b26e8fa-acb1-4f3e-b4fc-aa2ddf4491a7">
+          <ID>Continente</ID>
+          <Name>Continente</Name>
+          <SourceColumnID>Continente</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="7981a5a9-c43f-47f4-9072-57bbfedf1f84">
+          <ID>Cor Principal</ID>
+          <Name>Cor Principal</Name>
+          <SourceColumnID>Cor Principal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="80f4744e-f03b-4f02-873b-c5f7ebfdaa47">
+          <ID>Cores</ID>
+          <Name>Cores</Name>
+          <SourceColumnID>Cores</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="cdd07c90-a4f3-44f0-b059-27f6a591a505">
+          <ID>Crescent</ID>
+          <Name>Crescent</Name>
+          <SourceColumnID>Crescent</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e482ba6d-c3f3-44f2-ad65-f6907ff4b919">
+          <ID>Crosses</ID>
+          <Name>Crosses</Name>
+          <SourceColumnID>Crosses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="991eddf1-abf6-4468-9f81-d6fb04d2e4e6">
+          <ID>Gold</ID>
+          <Name>Gold</Name>
+          <SourceColumnID>Gold</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="60335263-6b97-42ba-a928-f1ef706200a8">
+          <ID>Green</ID>
+          <Name>Green</Name>
+          <SourceColumnID>Green</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c75a4bec-b6a2-4168-8e82-b6a77d051de0">
+          <ID>Icon</ID>
+          <Name>Icon</Name>
+          <SourceColumnID>Icon</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0a1ea6d7-ff7c-4cd1-816b-dbcb3caf94f9">
+          <ID>Orange</ID>
+          <Name>Orange</Name>
+          <SourceColumnID>Orange</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="48251543-1660-4a5a-b60d-facd5042f65d">
+          <ID>Pais</ID>
+          <Name>Pais</Name>
+          <SourceColumnID>Pais</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="e2f60389-d303-49d4-bcdc-1d2649f4eda3">
+          <ID>Quarters</ID>
+          <Name>Quarters</Name>
+          <SourceColumnID>Quarters</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="05b0195b-46fa-439a-8650-3ade832a7e86">
+          <ID>Riscas H</ID>
+          <Name>Riscas H</Name>
+          <SourceColumnID>Riscas H</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9f3f1e23-d1a8-4333-a102-9f4b518130d4">
+          <ID>Riscas V</ID>
+          <Name>Riscas V</Name>
+          <SourceColumnID>Riscas V</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b23a8510-5143-4e4d-8949-4157ffe35be7">
+          <ID>Saltires</ID>
+          <Name>Saltires</Name>
+          <SourceColumnID>Saltires</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8d0766b4-9b02-4890-a950-19cb0a609201">
+          <ID>Sunstars</ID>
+          <Name>Sunstars</Name>
+          <SourceColumnID>Sunstars</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b3ed28e3-a7ec-4a0f-820c-c5a56de8b3f2">
+          <ID>Text</ID>
+          <Name>Text</Name>
+          <SourceColumnID>Text</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9589d612-da3b-4e07-bf11-7168a390a967">
+          <ID>Topleft</ID>
+          <Name>Topleft</Name>
+          <SourceColumnID>Topleft</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7f27a67a-8558-4a2e-890a-d301d6508135">
+          <ID>Triangle</ID>
+          <Name>Triangle</Name>
+          <SourceColumnID>Triangle</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b7713b25-a7db-43bc-acf4-9b52df969eff">
+          <ID>White</ID>
+          <Name>White</Name>
+          <SourceColumnID>White</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ecd347e2-a325-4073-ad33-e542a97678f4">
+          <ID>Religiao</ID>
+          <Name>Religiao</Name>
+          <SourceColumnID>Religiao</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="720e921c-1f72-4349-8b35-e302c9f771b0">
+          <ID>Populacao</ID>
+          <Name>Populacao</Name>
+          <SourceColumnID>Populacao</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="22fa1ebc-f155-480d-8038-48e75cda5ca4">
+          <ID>Quadrante</ID>
+          <Name>Quadrante</Name>
+          <SourceColumnID>Quadrante</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>
