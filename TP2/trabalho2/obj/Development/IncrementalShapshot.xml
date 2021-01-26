@@ -47,14 +47,14 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>sneKcnUHYCXJ9+qr0q1LSXwC5Ws=24-01-2021 20:56:4223-01-2021 15:43:54</TimeStamp>
+        <TimeStamp>0OaEA8SFA2SP9+9J1f2bNA2x6HA=26-01-2021 17:57:3523-01-2021 15:43:54</TimeStamp>
         <ID>
           <String>Lingua</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>CJGZ5bCSRs9wfTSLE/7CpBaWaKQ=24-01-2021 21:14:5923-01-2021 16:16:47</TimeStamp>
+        <TimeStamp>esL2Yg3Jxa/ad7+qWNGw13EgH/E=26-01-2021 19:30:1623-01-2021 16:16:47</TimeStamp>
         <ID>
           <String>Religiao</String>
         </ID>
@@ -71,5 +71,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-01-24T21:15:16.936667Z</LastDeployed>
+  <LastDeployed>2021-01-26T19:49:47.243333Z</LastDeployed>
 </DeploymentSnapshot>
